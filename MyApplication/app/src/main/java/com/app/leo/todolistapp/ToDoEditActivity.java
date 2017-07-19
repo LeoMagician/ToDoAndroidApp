@@ -28,6 +28,7 @@ public class ToDoEditActivity extends AppCompatActivity {
 
         //back button
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setElevation(0);
         todo = getIntent().getParcelableExtra(KEY_TODO);
         setUpSaveButton();
 //        setUpToDoDetailUI();

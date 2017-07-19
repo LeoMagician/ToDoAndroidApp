@@ -11,14 +11,15 @@ import java.util.UUID;
 
 public class Todo implements Parcelable {
     private String text;
-    private String id;
+    public String id;
 
     public Todo() {
-        id = UUID.randomUUID().toString();
+        this.id = UUID.randomUUID().toString();
     }
 
     protected Todo(Parcel in) {
         text = in.readString();
+        id = in.readString();
     }
 
     public static final Creator<Todo> CREATOR = new Creator<Todo>() {
@@ -41,6 +42,7 @@ public class Todo implements Parcelable {
     @Override
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(text);
+        parcel.writeString(id);
     }
 
     public String getText() {
@@ -51,8 +53,5 @@ public class Todo implements Parcelable {
         this.text = text;
     }
 
-    public String getId() {
-        return id;
-    }
 
 }
