@@ -49,7 +49,7 @@ public class ToDoListAdpter extends BaseAdapter {
         if (convertView == null) {
             convertView = LayoutInflater.from(context).inflate(R.layout.activity_list_todo, viewGroup, false);
             viewHolder = new ViewHolder();
-            viewHolder.todoText = (TextView) convertView.findViewById(R.id.list_item_text);
+            viewHolder.todoText = convertView.findViewById(R.id.list_item_text);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder)convertView.getTag();
