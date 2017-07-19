@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_divider_height">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="todo_edit_bar_height">144dp</dimen>
+    <dimen name="todo_edit_margin_top">44dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="todo_edit_margin_bottom">32dp</dimen>
+    <dimen name="todo_edit_body_font_size">17sp</dimen>
+    <dimen name="todo_edit_font_size">29sp</dimen>
+    <dimen name="todo_edit_body_margin_top">28dp</dimen>
+    <dimen name="spacing_small">12dp</dimen>
+</resources>
